@@ -4,13 +4,13 @@ pipeline{
   stages{
     stage("Build"){
       steps{
-        bat "\"C:\\Program Files\\apache-maven-4.0.0-beta-4\\bin\\mvn\" clean install"
+        bat "\"C:\\Program Files\\apache-maven-3.9.9\\bin\\mvn\" clean install"
       }
     }
 
     stage("Test"){
       steps{
-        bat "\"C:\\Program Files\\apache-maven-4.0.0-beta-4\\bin\\mvn\" test"
+        bat "\"C:\\Program Files\\apache-maven-3.9.9\\bin\\mvn\" test"
       }
     }
   }
